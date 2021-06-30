@@ -1,0 +1,9 @@
+<div class="my-4 container">
+  <div class="row">
+    <div class="col-3" *ngFor='let itemClothes of listClothes'>
+      <div class="py-1 container-clothes">
+        <app-item-clothes [itemClothes]=itemClothes></app-item-clothes>
+      </div>
+    </div>
+  </div>
+</div>

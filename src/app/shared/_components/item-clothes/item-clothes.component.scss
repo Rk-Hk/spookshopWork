@@ -1,0 +1,33 @@
+.itemClothes {
+    text-decoration: none;
+    cursor:  pointer !important;
+}
+.detailClothesImage{
+    p{
+        margin-bottom: 0rem !important;
+    }
+    p.clothesName {
+        color: black;
+    }
+    p.clothesName:hover {
+        color: #ff4c2f!important;
+    }
+    p.clothesGender{
+        font-size: 0.8rem;
+    }
+    span.line-through {
+        text-decoration: line-through;
+        color: #707070;
+    }
+}
+
+.detaildescuento{
+    top: 0;
+    right: 0;
+    background-color: #ff4c2f;
+    padding: 3px 6px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}

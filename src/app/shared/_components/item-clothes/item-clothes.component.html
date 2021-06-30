@@ -1,0 +1,11 @@
+<div class="itemClothes position-relative">
+    <a  (click)="redirectToProductDetail()" class="pointer">
+        <span class="detaildescuento position-absolute">-{{itemClothes.discount}}%</span>
+        <img *ngIf="itemClothes.images" loading="lazy" [src]="itemClothes.images[0]"  class="img-fluid">    
+    </a>
+    <div class="mb-3 mt-2 detailClothesImage">
+        <p class="clothesGender">{{itemClothes.gender == 'M' ? 'MUJER': itemClothes.gender == 'H' ? 'HOMBRE': 'UNISEX'}}</p>
+        <p class="clothesName">{{itemClothes.name}}</p>
+        <p class="clothesPrice"> <span class="color-orange ">{{(itemClothes.discount ? (1-itemClothes.discount/100)*itemClothes.price : itemClothes.price)| currency:'S/.':'code'}}</span> <span class="ml-3 line-through">{{itemClothes.price| currency:'S/.':'code'}}</span></p>
+    </div>
+</div>

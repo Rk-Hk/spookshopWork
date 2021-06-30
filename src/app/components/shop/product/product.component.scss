@@ -1,0 +1,33 @@
+.price {
+    font-size: 1.8rem;
+    font-family: Poppins,sans-serif;
+}
+
+.priceWhitDescount {
+    text-decoration: line-through;
+    color: #707070 !important;
+    font-family: Poppins,sans-serif;
+}
+
+.img-wrapper {
+  overflow: hidden; 
+}
+
+.imagePrincipal {
+    transition: 0.3s;
+}
+
+.imagePrincipal:hover {
+    transform: scale(2);
+}
+
+.detailCantidad {
+    
+    
+    .btn-numberstock {
+        background-color: #f8f9fa;
+        cursor: inherit;
+        font-weight: 500;
+        color: #707070 !important;
+    }
+}

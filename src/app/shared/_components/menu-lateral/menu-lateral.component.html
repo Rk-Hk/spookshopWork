@@ -1,0 +1,29 @@
+<div class="modal fade" id="modalMenuLateral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bolsa de compras <span class="badge badge-info">4</span></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-item-card></app-item-card>
+        <app-item-card></app-item-card>
+        <app-item-card></app-item-card>
+      </div>
+      <div class="modal-footer">
+        <div>
+            <div class="bg-white">
+                <p class="py-3 px-3"><span class=" text-weight">SUBTOTAL:</span> <span class="ml-3 color-orange"> S/. 69.00</span> </p>
+            </div>
+            <div class="px-3">
+              <button type="button" class="btn btn-secondary w-50" data-dismiss="modal">Ver detalles</button>
+              <button type="button" class="btn btn-primary w-50" (click)="eventRedirectToCheckout()">comprar</button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

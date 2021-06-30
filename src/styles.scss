@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+p {
+    color: #5e5e5e !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.ngxImageZoomContainer {
+    max-width: 100% !important;
+    height: auto !important;
+    img {
+        width: initial
+    }
+}
+
+
+.color-orange {
+    color: #ff4c2f!important; 
+}
+
+.text-weight {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+#modalMenuLateral {
+    .modal-dialog {
+        margin: 0px;
+        padding: 0px;
+        transition: none;
+    }
+    .modal-content{
+        height: 100vh;
+        border: none;
+        border-radius: 0px;
+        right: 0;
+        position: fixed;
+        width: 350px;
+        background-color: #f4f4f4;
+        
+    }
+
+    .modal-footer  {
+        display: block;
+        padding: 0;
+    }
+}
+
+
+#headerComponent{
+    .mat-badge-content{
+        background-color: #ff4c2f !important;
+    }
+}
+
+#footerComponent{
+    background-color: black;
+    color: white !important;
+}
+
+
+
+#productId {
+    .ngxImageZoomThumbnail {
+        height: 650px !important;
+    }
+    
+}
+
+#productDetailComponent {
+}
+
+.btn-orange {
+    background-color: #ff4c2f;
+    color: white;
+}
+.btn-orange:hover {
+    background-color: #f24329;
+    color: white;
+}

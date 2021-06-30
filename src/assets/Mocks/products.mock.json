@@ -1,0 +1,17 @@
+{
+  "responseCode": "0",
+  "responseData": [{
+    "name": "Polo blanco superman",
+    "price": "29.90",
+    "gender": "M",
+    "type": "POLO",
+    "id": "PO-0001",
+    "description": "Polo Mujer manga corta superman",
+    "discount": 23,
+    "stock": 10,
+    "images": [{
+      "url": "https://spook.pe/wp-content/uploads/2020/12/mockup-of-a-customizable-crewneck-sweatshirt-hanging-against-a-concrete-wall-33997-12-300x400.png",
+      "color": "black"
+    }]
+  }]
+}

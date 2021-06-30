@@ -1,0 +1,9 @@
+#navbarSupportedContent{
+    a.nav-link, a.dropdown-item {
+        font-size: 0.8rem !important;
+        font-weight: 500;
+    }
+    a.dropdown-item{
+        cursor: pointer;
+    }
+}

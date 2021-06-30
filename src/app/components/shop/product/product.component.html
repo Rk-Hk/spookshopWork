@@ -1,0 +1,54 @@
+<div id="productDetailComponent" class=" my-3 container">
+  <div class="row">
+    <div class="col-8">
+      <div *ngIf="productSelected" class="row">
+        <div class="col-3">
+
+          <img *ngFor="let itemImage of productSelected.images" class="img-fluid  rounded mb-2"
+            [src]="itemImage"
+            alt="">
+        </div>
+        <div id="productId" class="col-9 img-wrapper">
+          <lib-ngx-image-zoom 
+            [thumbImage]='imageProduct' 
+            [zoomMode]='zoomMode' 
+            [magnification]='1.5'>
+          </lib-ngx-image-zoom>
+          <!-- <img class="img-fluid rounded imagePrincipal"
+            src="https://spook.pe/wp-content/uploads/2020/12/mockup-of-a-customizable-crewneck-sweatshirt-hanging-against-a-concrete-wall-33997-18.png"
+            alt=""> -->
+        </div>
+
+      </div>
+    </div>
+    <div *ngIf="productSelected" class="col-4">
+      <p class="subtitle">{{productSelected.name}}</p>
+      <p> <span class="priceWhitDescount">{{productSelected.price| currency:'S/.':'code'}}</span> <span class="price ml-3 color-orange">{{(productSelected.discount ? (1-productSelected.discount/100)*productSelected.price : productSelected.price)| currency:'S/.':'code'}}</span></p>
+      <p class="text-justify">La fabricación de esta prenda es de corte recto, con una remalle de una pasa con
+        recubierta en el cuello para una mayor durabilidad de la prenda; respecto a la imagen es impresa directamente en
+        la tela generando unas repeticiones de la imagen para un excelente acabado en la tela. Esta está sugerida para
+        el uso informal ya sea a la orilla de la playa, río, terraza; por su comodidad y sentirás la sensación de una
+        segunda piel.</p>
+      <div>
+        <small><b class="mr-4">Talla</b></small>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" *ngFor="let sizeItem of productSelected.availableSizes.split(',')" (click)="eventSelectSizeItem(sizeItem)" class="btn btn-secondary">{{sizeItem}}</button>
+        </div>
+        <div class="detailCantidad">
+            <div class="btn-group mr-2" role="group">
+              <button type="button" class="btn border-top border-bottom border-left btn-light" (click)="eventRemoveItems()"><mat-icon>remove</mat-icon></button>
+              <button type="button" class="btn-numberstock btn border-top border-bottom border-left border-right" style="z-index: 1;">{{cantItemSelect}}</button>
+              <button type="button" class="btn border-top border-bottom border-right btn-light" (click)="eventAddItems()"><mat-icon>add</mat-icon></button>
+            </div>
+          <button [disabled]="cantItemSelect==0 || !sizeItemSelect" class="my-2 btn btn-block btn-orange" >Añadir a carrito </button>
+        </div>
+      </div>
+      
+      <p class="clothesGender"><small><b class="mr-4">Categoria</b></small>{{productSelected.gender == 'M' ? 'MUJER': productSelected.gender == 'H' ? 'HOMBRE': 'UNISEX'}}</p>
+    </div>
+
+    <div class="col-12">
+
+    </div>
+  </div>
+</div>

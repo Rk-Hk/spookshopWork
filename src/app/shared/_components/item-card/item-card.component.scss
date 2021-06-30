@@ -1,0 +1,17 @@
+.itemCard{
+    border-bottom: 1px solid #eaeaec;
+    p {
+        font-size: 0.8em;
+        margin: 0;
+    }
+    .deleteItemCard {
+        display: none;
+    }
+}
+
+.itemCard:hover{
+        .deleteItemCard {
+            display: initial !important;
+            
+        }
+}

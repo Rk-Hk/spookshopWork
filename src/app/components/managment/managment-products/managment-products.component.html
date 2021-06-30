@@ -1,0 +1,51 @@
+<div class="container">
+    <form [formGroup]="formProduct">
+        <div class="row">
+            <div class="col-6">
+                <mat-form-field class="example-full-width w-50 px-1" appearance="outline">
+                    <mat-label>Nombres de producto<span class="text-danger">*</span></mat-label>
+                    <input matInput formControlName='name'>
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width w-50 px-1" appearance="outline">
+                    <mat-label>Descripción de producto<span class="text-danger">*</span></mat-label>
+                    <input matInput formControlName="description">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width w-25 px-1" appearance="outline">
+                    <mat-label>Descuento</mat-label>
+                    <input matInput formControlName="discount">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width w-25 px-1" appearance="outline">
+                    <mat-label>Género de usuario<span class="text-danger">*</span></mat-label>
+                    <input matInput formControlName="gender">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width w-25 px-1" appearance="outline">
+                    <mat-label>Precio<span class="text-danger">*</span></mat-label>
+                    <input matInput formControlName="price">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width w-25 px-1" appearance="outline">
+                    <mat-label>Tipo de producto<span class="text-danger">*</span></mat-label>
+                    <input matInput formControlName="type">
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width w-50 px-1" appearance="outline">
+                    <mat-label>Tallas disponibles<span class="text-danger">*</span></mat-label>
+                    <input matInput formControlName="availableSizes">
+                  </mat-form-field>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header d-flex">Imagenes de producto <button class="btn btn-warning ml-auto">Subir Imagen</button></div>
+                    <div class="card-body">
+                        
+                    <div class="listImages w-100">
+    
+                    </div>
+                      </div>
+                    
+                </div>
+                
+        
+                <button class="btn btn-primary" (click)="eventSaveClothingFirestore()">Guardad Producto</button></div>
+        </div>
+        
+    </form>
+</div>

@@ -1,0 +1,19 @@
+#bannerComponent {
+    // background: #000000;
+    background-image: 
+    linear-gradient(to bottom, transparent, rgba(0,0,0,1)), url("/assets/images/banner-patron-boys.gif");
+    .breadcrumb{
+        background-color: transparent;
+        padding: 0px !important;
+        a {
+            color: white !important;
+            :hover {
+                color: #ff4c2f !important; 
+            }
+        };
+    }
+    .bannerTitle{
+        color: white;
+    }
+    
+}
